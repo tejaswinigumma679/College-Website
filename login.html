@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body style="background-image: url('images/QISCET3.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;">
+  <div class="box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="password" placeholder="Password" id="password" required>
+      <div style="text-align:left; font-size:14px;">
+        <input type="checkbox" onclick="ShowPassword()"> Show password
+      </div>
+      <button type="submit">Login</button>
+      <a href="#">Forgot password?</a>
+      <div class="link">
+        Don't have an account? <a href="signup.html">Signup</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function ShowPassword() {
+      const password = document.getElementById("password");
+      if (password.type === "password") {
+        password.type = "text";
+      } else {
+        password.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>
