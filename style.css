@@ -20,12 +20,12 @@ h1,h2{
     font-style: bold;
 }
 .navbar a {
+    font-size: 28px;
     float: left;
     color: white;
     padding: 14px 20px;
     text-decoration: none;
 }
-
 .navbar a:hover {
     background-color: #ff9900;
 }
